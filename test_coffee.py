@@ -2,6 +2,13 @@ import unittest
 from main import Coffee, Order
 
 class TestCoffeeOrder(unittest.TestCase):
+    def test_add_invalid_price(self):
+        order=Order()
+        bad_coffee=Coffee("Flat white", "3 dollars")
+        order.add_item(bad_coffee)
+        with self.assertRaises(TypeError):
+            order.total()
+            
     def test_add_item(self):
         order=Order()
         coffee=Coffee("TestCoffee", 5.0)
