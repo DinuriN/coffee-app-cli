@@ -53,7 +53,7 @@ def main():
         Coffee("Latte", 3.5),
         Coffee("Capuccino", 3.0),
         Coffee("Americano", 2.0),
-        Coffee("Flat white", "3$") #--wrong type
+        Coffee("Flat white", "3 dollars") #--wrong type
     ]
 
     order=Order()
